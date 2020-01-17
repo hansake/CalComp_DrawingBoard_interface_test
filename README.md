@@ -29,4 +29,5 @@ Running the program:<br>
     Frame: [bc 31 2d 00 2e 0f]  X:  6317, Y:  5903, Button: 0 1 2 3 <br>
     Exit dtest<br>
 
+Status of the digitizer is updated for each frame that is sent.
 The program is stopped if all four buttons are pressed (or using Ctrl-C).
