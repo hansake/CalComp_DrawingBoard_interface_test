@@ -14,11 +14,11 @@ Each frame is 6 bytes long
 ** Pressing button 3 sets bit 5 (0x20)
 * Byte 2 most significant X value in bits 0 - 6
 * Byte 3 least significant X value in bits 0 - 6
-** The X value in byte 2 & 3 is 0 in left edge of drawing area. The right edge outputs 0x5d 0x5f (decimal 0 - 11999).
+> The X value in byte 2 & 3 is 0 in left edge of drawing area. The right edge outputs 0x5d 0x5f (decimal 0 - 11999).
 * Byte 4 always 0
 * Byte 5 most significant Y value in bits 0 - 6
 * Byte 6 least significant Y value in bits 0 - 6
-** The Y value in byte 5 & 6 is 0 in bottom edge of drawing area. The top edge outputs 0x5d 0x5f (decimal 0 - 11999).
+> The Y value in byte 5 & 6 is 0 in bottom edge of drawing area. The top edge outputs 0x5d 0x5f (decimal 0 - 11999).
 
 Running the program:<br>
 hal@LinuxServer:~/digitizer$ ./dtest < /dev/ttyS0<br>
