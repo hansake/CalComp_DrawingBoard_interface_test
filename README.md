@@ -21,8 +21,8 @@ Each frame is 6 bytes long
 > The Y value in byte 5 & 6 is 0 in bottom edge of drawing area. The top edge outputs 0x5d 0x5f (decimal 0 - 11999).
 
 Running the program:<br>
-hal@LinuxServer:~/digitizer$ ./dtest < /dev/ttyS0<br>
-Frame: [bc 31 2d 00 2e 0f]  X:  6317, Y:  5903, Button: 0 1 2 3 <br>
-Exit dtest<br>
+    hal@LinuxServer:~/digitizer$ ./dtest < /dev/ttyS0<br>
+    Frame: [bc 31 2d 00 2e 0f]  X:  6317, Y:  5903, Button: 0 1 2 3 <br>
+    Exit dtest<br>
 
 The program is stopped if all four buttons are pressed (or using Ctrl-C).
