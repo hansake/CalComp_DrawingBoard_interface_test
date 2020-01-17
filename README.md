@@ -3,7 +3,11 @@ Test program for serial interface of CalComp DrawingBoard Model 23120
 
 The CalComp DrawingBoard has a 25-pin D-sub connector where pin 7 is Gnd and pin 3 is Tx.
 The default baud rate is 9600.
-It has Model Number: 23120 and Part Number: 15134-080114
+My DrawingBoard has Model Number: 23120 and Part Number: 15134-080114.
+
+I could not find any information on Internet about the interface protocol of this device.
+After some experimentation the following information was collected.
+Making a driver based on this information is perhaps another project.
 
 The tablet sends a continuous stream of characters (bytes) where each frame starts with a character with bit 7 set (0x80).
 Each frame is 6 bytes long
